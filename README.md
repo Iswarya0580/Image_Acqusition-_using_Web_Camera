@@ -33,12 +33,12 @@ End the program and close the output video window by pressing 'q'.
 ## i) Write the frame as JPG file
 ```
 import cv2
-videoCaptureObject=cv2.VideoCapture(0)
+viedoCaptureObject=cv2.VideoCapture(0)
 while(True):
-    ret,frame=videoCaptureObject.read()
-    cv2.imwrite("webcam.jpg",frame)
+    ret,frame=viedoCaptureObject.read()
+    cv2.imwrite("NewPicture.jpg",frame)
     result=False
-videoCaptureObject.release()
+viedoCaptureObject.release()
 cv2.destroyAllWindows()
 ```
 
@@ -49,14 +49,12 @@ import cv2
 cap=cv2.VideoCapture(0)
 while True:
     ret,frame=cap.read()
-    cv2.imshow(' captured image',frame)
+    cv2.imshow('Iswarya',frame)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
 cv2.destroyAllWindows()
 ```
-
-
 
 ## iii) Display the video by resizing the window
 ```
@@ -73,7 +71,7 @@ while True:
     image[height//2:, :width//2]=smaller_frame
     image[:height//2, width//2:]=smaller_frame
     image[height//2:, width//2:]=smaller_frame
-    cv2.imshow('Renuga_212222230118',image)
+    cv2.imshow('Iswarya',image)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
@@ -97,7 +95,7 @@ while True:
     image[height//2:, :width//2]=smaller_frame
     image[:height//2, width//2:]=cv2.rotate(smaller_frame,cv2.ROTATE_180)
     image[height//2:, width//2:]=smaller_frame
-    cv2.imshow('212222230118',image)
+    cv2.imshow('Iswarya',image)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
@@ -109,22 +107,24 @@ cv2.destroyAllWindows()
 
 ### i) Write the frame as JPG image
 
-![image](https://github.com/user-attachments/assets/b5860610-1d1f-4d09-83c2-5fa5dce3492b)
+![Screenshot 2024-11-22 184755](https://github.com/user-attachments/assets/a01205c0-6732-4dad-b142-17d05f0e6986)
 
 
 ### ii) Display the video
 
-![image](https://github.com/user-attachments/assets/0aefba9a-6699-4ebf-933b-1c68c1346825)
+![Screenshot 2024-11-22 184842](https://github.com/user-attachments/assets/aeaf283c-c6f0-496f-8c0a-c8d80bdb52fe)
 
 
 ### iii) Display the video by resizing the window
 
-![image](https://github.com/user-attachments/assets/3261703a-4f74-4aa6-82d5-39cca495aa39)
+![Screenshot 2024-11-22 184612](https://github.com/user-attachments/assets/6e063b7a-6e37-4f0d-9b8f-f8f88fd52dbf)
+
 
 
 ### iv) Rotate and display the video
 
-![image](https://github.com/user-attachments/assets/761fe38a-cc5a-4690-ba80-eb3ea05e8b21)
+![Screenshot 2024-11-22 184944](https://github.com/user-attachments/assets/d21a695b-f720-4b40-99b6-df81797c57a5)
+
 
 
 ## Result:
